@@ -1,0 +1,13 @@
+<ion-header><ion-toolbar><ion-title>Dashboard</ion-title></ion-toolbar></ion-header>
+<ion-content>
+  <ion-button expand="full" (click)="uploadFile()">Upload from Files</ion-button>
+  <input type="file" accept="image/*" hidden #fileInput (change)="onFileSelected($event)" />
+
+  <ion-button expand="full" (click)="captureWithCamera()">Capture with Camera</ion-button>
+  <input type="file" accept="image/*" capture="environment" hidden #cameraInput (change)="onFileSelected($event)" />
+
+  <ion-img [src]="image" *ngIf="image"></ion-img>
+
+  <ion-button expand="full" routerLink="/qrscanner">Scan QR Code</ion-button>
+
+</ion-content>

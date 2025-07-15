@@ -35,3 +35,100 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+/* GLOBAL STYLES */
+
+:root {
+  --ion-color-primary: #000000; /* Purple */
+  --ion-color-secondary: #ffca28; /* Yellow Accent */
+  --ion-color-tertiary: #00bcd4;
+  --ion-color-success: #4caf50;
+  --ion-color-warning: #ff9800;
+  --ion-color-danger: #f44336;
+  --ion-color-dark: #1e1e1e;
+  --ion-color-medium: #9e9e9e;
+  --ion-color-light: #f5f5f5;
+
+  --ion-font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* GENERAL BODY STYLES */
+body {
+  font-family: var(--ion-font-family);
+  background-color: var(--ion-color-light);
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+/* PAGE CONTAINER */
+ion-content {
+  padding: 16px;
+  --background: #f9f9f9;
+}
+
+/* HEADERS */
+ion-header {
+  background-color: var(--ion-color-primary);
+  color: white;
+}
+
+ion-toolbar {
+  --background: var(--ion-color-primary);
+  --color: #fff;
+}
+
+ion-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+ion-button {
+  --border-radius: 12px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #f5f5f5;
+  
+}
+
+/* INPUTS */
+ion-input{
+      --padding-start: 12px;
+  --padding-end: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--ion-color-medium);
+  background-color: #0a0a0a;
+
+}
+ion-textarea {
+  --padding-start: 12px;
+  --padding-end: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--ion-color-medium);
+  background-color: #fff;
+}
+
+/* HOME BUTTON STYLE */
+.home-button {
+  margin-top: 30px;
+  background-color: var(--ion-color-secondary);
+  color: #ffffff;
+}
+
+/* QR/Barcode Display Container */
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.qr-container qrcode,
+.qr-container ngx-barcode {
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  background: white;
+}

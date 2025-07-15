@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>QR Scanner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <video id="video" width="100%" style="border: 1px solid #ccc;"></video>
+
+  <ion-card *ngIf="result">
+    <ion-card-header>
+      <ion-card-title>Scanned Result</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ result }}
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="full" routerLink="/gmap">Live location</ion-button>
+
+
+  <ion-button expand="full" routerLink="/dashboard">Home</ion-button>
+</ion-content>
